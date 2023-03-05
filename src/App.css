@@ -1,0 +1,62 @@
+/* Ana div'in stilleri */
+.App {
+  text-align: center; /* İçeriği merkeze al */
+  background-color: #ed65b9; /* Arka plan rengi */
+  padding: 20px; /* Padding ekle */
+}
+
+
+/* H1'in stilleri */
+h1 {
+  font-size: 32px; /* Font büyüklüğü */
+  margin-bottom: 30px; /* Alt boşluk */
+  animation: pulse 1.5s infinite; /* Animasyon ekle */
+}
+
+/* Artır/Azalt butonlarının stilleri */
+button {
+  background-color: #4caf50; /* Arkaplan rengi */
+  color: #fff; /* Yazı rengi */
+  border: none; /* Kenarlık yok */
+  padding: 10px 20px; /* Padding ekle */
+  margin: 10px; /* Kenar boşluğu */
+  border-radius: 5px; /* Kenar yuvarlatma */
+  cursor: pointer; /* İşaretçi değiştir */
+
+  /*neon renk vermek için*/
+  border: 2px solid #fff;
+  box-shadow: 0 0 15px #fff;
+}
+
+/* Celsius, Fahrenheit ve Kelvin componentlerinin stilleri */
+.temperature-container {
+  display: inline-block; /* Yan yana yerleştir */
+  margin: 20px; /* Kenar boşluğu */
+  padding: 20px; /* Padding ekle */
+  border: 1px solid #ccc; /* Kenarlık ekle */
+  border-radius: 5px; /* Kenar yuvarlatma */
+  box-shadow: 0 0 10px #ccc; /* Gölgelendirme ekle */
+  color:blanchedalmond
+}
+
+
+/* Animasyon */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*0% anahtarında, elementin ölçeği normal boyutundadır (transform: scale(1)). 50% anahtarında, 
+elementin boyutu %10 büyütülmüş haldedir (transform: scale(1.1)). 
+Son olarak, 100% anahtarında elementin boyutu tekrar normal boyutuna döner (transform: scale(1)).*/
+
+/*scale fonksiyonu, x ve y eksenlerinde bir elementin boyutunu değiştirir ve 1, normal boyutu ifade eder. 
+  1.1 değeri, elementin %10 büyütülmüş hali anlamına gelir.*/
+
+
